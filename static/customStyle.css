@@ -1,0 +1,262 @@
+/*imported font links*/
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Reggae+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nova+Flat&display=swap');
+
+
+/*declaring contants for fonts, colors, etc.*/
+:root{
+  --piggyColorLight: #ffded5;
+  --piggyColorMedium: #f4ac98;
+  --piggyColorDark: #ce6649;
+  --fontColor: #4e352e;
+  --innerBgColor: #00000026;
+  --bodyFont: 'Nova Flat', cursive;
+  --brandFont: 'Reggae One', cursive;
+}
+
+
+/*css for body*/
+body{
+  background: url('images/img1.jpg') no-repeat center center/cover;
+  font-family: var(--bodyFont);
+  font-size: 1.5rem;
+  color: var(--fontColor);
+}
+
+a{
+  text-decoration: none;
+  color: var(--fontColor);
+}
+
+a:hover{
+  color:black;
+}
+
+.right-float{
+  float: right;
+}
+.left-float{
+  float: left;
+}
+.form-text{
+  color: red;
+}
+
+.btn-light{
+  border-color: var(--piggyColorMedium) !important;
+}
+
+/*css for navigation bar*/
+.navbar{
+  background-color: var(--piggyColorLight);
+  height: 10vh;
+  position: sticky;
+  z-index: 1;
+}
+.navbar-brand{
+  font-family: var(--brandFont);
+  font-size: 2rem;
+}
+.navbar-nav{
+  background-color: var(--piggyColorLight);
+}
+.navbar-light .navbar-nav .nav-link {
+ font-size: 1.2rem;
+ margin-right: 1rem;
+}
+
+.index-button{
+  width: 180px !important;
+}
+/*css for footer of the website*/
+.footer {
+  background-color: var(--piggyColorLight);
+  font-size: 1rem;
+  height: 6vh;
+  box-sizing: border-box;
+}
+
+
+/*css for main body*/
+.bodyMain{
+  width: 100%;
+  min-height: 84vh !important;
+  max-height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+
+/*css for all the buttons in the website*/
+.kButton{
+  background-color: var(--piggyColorLight);
+  color: var(--fontColor);
+  border: 3px solid var(--piggyColorMedium);
+  width : 100%;
+}
+
+
+/*css for inner-body of index page*/
+.bodyB-index{
+  width: 60%;
+  height: 40vh;
+  font-size: 2rem;
+  background-color: var(--innerBgColor);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  color:black;
+  border-radius: 12px;
+}
+
+
+/*css for all the forms in this website*/
+.forms{
+  font-size: 1.1rem;
+  text-align: left;
+}
+.form-label {
+  margin-bottom: 0;
+}
+
+
+/*css for sign-up and log-in cards*/
+.card{
+  width: 30%;
+}
+.card-header{
+  background-color: var(--piggyColorLight);
+}
+.card-footer{
+  font-size: .9rem;
+}
+.card-footer a{
+  color: var(--piggyColorDark);
+}
+.recover-password-link{
+  font-size: .9rem;
+  color: var(--piggyColorDark);
+}
+
+/*css for about page*/
+.aboutBody{
+  min-height: 84vh;
+  font-size: 1rem;
+}
+
+/*css for home page*/
+.homebody{
+  justify-content: space-evenly !important;
+}
+.addPlan{
+  width: 14rem;
+  height: 8rem;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+}
+.addPlan a{
+  color: var(--piggyColorDark);
+}
+
+.home-plan-body{
+  justify-content: flex-start !important;
+  font-size: 1rem;
+}
+.card-body-home-plan{
+  padding: 1rem 0.5rem !important;
+  text-align: initial !important;
+}
+.addButton {
+  background-color: var(--piggyColorLight);
+  border: 3px solid var(--piggyColorMedium);
+  color: var(--fontColor); 
+  border-radius: 25%;
+  font-size: 1.5rem !important;
+}
+.flex{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.card-view-plan{
+  width: 80% !important;
+}
+.modal-header{
+  background-color: var(--piggyColorLight) !important;
+}
+
+@media only screen and (max-width: 960px) {
+  body {
+    font-size: 1rem;
+  }
+  .card-into{
+   width: 50% !important;
+  }
+  .card-plan{
+   width: 80%;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  body {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .footer {
+    font-size: 0.8rem;
+  }
+  .card-into{
+   width: 95% !important;
+  }
+  .forms-sel {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .home-plan-body{
+    font-size: .8rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .home-plan-body{
+    font-size: .8rem;
+  }
+  .home-plan-body .col-9{
+   width: 95% !important;
+  }
+  .home-plan-body .col-3{
+   width: 60%;
+  }
+  .addButton{
+   font-size: 1rem;
+  }
+  .card-plan{
+   width: 80%;
+  }
+  .view-change{
+   display: flex;
+   flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 280px) {
+  body {
+    font-size: 1.5rem;
+  }
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+}
